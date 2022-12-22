@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>View Workout</title>
+</head>
+<body>
+    <div class="container">
+        <p class="text-end"><a href="/workouts/new">Add Workout</a> <a href="/home">Dashboard</a> <button><a href="/logout">Logout</a></button></p>
+        <p>Painted by {{this_workout.user.first_name}} {{this_workout.user.last_name}}</p>
+        <br>
+        <p> Workout:{{this_workout.workout}}</p>
+        <br>
+        <p>Description: {{this_workout.description}}</p>
+        <br>
+        <p>Day: {{this_workout.day}}</p>
+        <p>Date: {{this_workout.date}}</p>
+    </div>
+</body>
+</html>
