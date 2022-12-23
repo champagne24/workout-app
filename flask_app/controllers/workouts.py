@@ -63,7 +63,7 @@ def add_workout_to_db():
     if 'user_id' not in session:
         return redirect('/')
     if not workout.Workout.validate_workout(request.form):
-        return redirect('/paintings/new')
+        return redirect('/workouts/new')
     data = {
         'workout': request.form['workout'],
         'description': request.form['description'],

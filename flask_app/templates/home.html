@@ -14,7 +14,7 @@
             <a class="text-start" href="/workouts/new">Add Workout</a><a class="text-end" href="/logout"> Logout</a>
         </div>
             {% for this_workout in all_workouts %}
-                <p class="text-center" class="space-around"><a href="/view/workout/{{this_workout.id}}">{{this_workout.title}}</a> by {{this_workout.user.first_name}} {{this_workout.user.last_name}}
+                <p class="text-center" class="space-around"><a href="/view/workout/{{this_workout.id}}">{{this_workout.workout}}</a> by {{this_workout.user.first_name}} {{this_workout.user.last_name}}
                     {% if session["user_id"] == this_workout.user.id %}
                     <a href="/edit/workout/{{this_workout.id}}">Edit</a> <a href="/user/delete/{{this_workout.id}}">Delete</a>
                     {% endif %}
